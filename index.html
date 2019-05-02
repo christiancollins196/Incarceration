@@ -26,23 +26,60 @@
     <style>
 
       /* custom styles here */
+        
 
+        header{
+            background: none!important;
+            position: static!important;
+        }
+        
+        header h1{
+            color: #000;
+            opacity: 0;
+            transition: opacity 2s;
+        }
+        
+        header p.lead{
+            color: #000;
+            opacity: 0;
+            transition: opacity 2s;
+            transition-delay: 1s;
+        }
+
+        #top-image{
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left:0;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+
+        
     </style>
   </head>
   <body>
     
 
     <!-- Main header -->
-    <header class="text-center full-screen dark-shade text-white">
-      <h1 class="mt-40">Title of Project</h1>
-      <p class="lead">Here is a tagline of the project</p>
+    <header class="text-center full-screen dark-shade text-white d-flex align-items-center">
+      <div class="header-container w-100">
+        <h1>Title of Project</h1>
+        <p class="lead">Here is a tagline of the project</p>
+          
+          
+        <!-- The main image that sticks to the top when scrolling -->
+        <img id="main-circle" src="assets/courts.png" class="d-block img-fluid mx-auto">   
+      </div>
+    
+      <!-- TOP BACKGROUND IMAGE WITH ALL BLUE CIRCLES -->
+      <img id="top-image" src="assets/Youth%20Incarceration%20Assets_20190501.svg">
+      
 
-      <video class="background-video" loop muted autoplay playsinline preload>
-        <source src="assets/background-video.mp4" type="video/mp4">
-      </video>
 
     </header>
-
+    
 
 
     <!-- start of body text -->
@@ -115,9 +152,11 @@
         <div class="col-12 col-sm-10">
 
           <!-- Example of map embed -->
+<!--
           <div class="embed-responsive embed-responsive-4by3">
             <iframe class="embed-responsive-item" src="https://public.carto.com/viz/397fd294-a82b-4470-90cc-6153ebad5bf6/embed_map" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
           </div>
+-->
 
 
         </div><!-- closes .col12 etc -->
@@ -421,9 +460,28 @@
     <script>
       //initiate skrollr
       var s = skrollr.init();
+        
+      var mainCircleTop = $("#main-circle").offset().top;
+        
+        
+      window.setTimeout(function(){
+          
+          $("header h1,header p").css("opacity", 1);
+          
+      }, 1000);
 
       //jquery
       jQuery(document).ready(function($){
+          
+          
+        $(window).on("scroll", function(){
+            if($(window).scrollTop() > mainCircleTop - 250){
+                $("#main-circle").css({position:"fixed", top:"250px",left:"50%",transform:"translateX(-50%)"});
+            } else {
+                $("#main-circle").css({position:"static", transform:"none"})
+            }
+        })
+        
 
 
         //modal code for lightbox
