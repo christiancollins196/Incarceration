@@ -27,6 +27,9 @@
 
       /* custom styles here */
         
+/* custom styles here */
+        @import url('https://fonts.googleapis.com/css?family=Andada|Karma:600|Markazi+Text|Source+Sans+Pro');
+        @import url('https://fonts.googleapis.com/css?family=Andada|Karma:600|Markazi+Text|Roboto|Source+Sans+Pro');
 
         header{
             background: none!important;
@@ -34,16 +37,21 @@
         }
         
         header h1{
+            
             color: #000;
             opacity: 0;
             transition: opacity 2s;
+            font-family: 'Markazi Text', serif;
         }
         
         header p.lead{
             color: #000;
+            padding-top: 20px;
+            font-size: 1em;
             opacity: 0;
             transition: opacity 2s;
-            transition-delay: 1s;
+            transition-delay: 2.5s;
+            font-family: 'Karma', serif;
         }
 
         #top-image{
@@ -54,29 +62,27 @@
             width: 100vw;
             height: 100vh;
         }
-        
-
-        
+         
     </style>
   </head>
   <body>
     
 
-    <!-- Main header -->
+     <!-- Main header -->
     <header class="text-center full-screen dark-shade text-white d-flex align-items-center">
       <div class="header-container w-100">
-        <h1>Title of Project</h1>
-        <p class="lead">Here is a tagline of the project</p>
+        <h1> On any given night, 47,000 minors sleep in California detention centers.
+        </h1>
+          
+        <p class="lead"> THEY SHOULDN'T HAVE TO. </p>
           
           
         <!-- The main image that sticks to the top when scrolling -->
-        <img id="main-circle" src="assets/courts.png" class="d-block img-fluid mx-auto">   
+        <img id="main-circle" src="assets/courts.svg" class="d-block img-fluid mx-auto">   
       </div>
     
       <!-- TOP BACKGROUND IMAGE WITH ALL BLUE CIRCLES -->
-      <img id="top-image" src="assets/Youth%20Incarceration%20Assets_20190501.svg">
-      
-
+          
     </header>
     
 
