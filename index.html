@@ -36,20 +36,26 @@
             position: static!important;
         }
         
+        .row {
+            padding: 60px;
+        }
+        
         header h1{
             
             color: white;
+            font-size: 2em;
             opacity: 1;
             transition: opacity 2s;
             transition-delay: 2.5s;
             font-family: 'Karma', serif;
             padding: 40px;
         }
+
         
         header p.lead{
             color: white;
             padding-top: 20px;
-            font-size: 1em;
+            font-size: 1.1em;
             opacity: 1;
             transition: opacity 2s;
             transition-delay: 2.5s;
@@ -74,7 +80,7 @@
      <!-- Main header -->
     <header class="text-center full-screen dark-shade text-white d-flex align-items-center">
       <div class="header-container w-100">
-        <h1> On any given night, 47,000 minors sleep in California detention centers.
+        <h1> On any given night, 47,000 minors in California sleep detention centers.
         </h1>
           
         <p class="lead"> THEY SHOULDN'T HAVE TO. </p>
@@ -100,6 +106,12 @@
 
     <!-- start of body text -->
     <div class="container mt-5">
+        
+        <div class="embed-responsive embed-responsive-16by9" autoplay muted >
+           <iframe src="https://player.vimeo.com/video/334195327" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen> </iframe>
+
+        </div>
+        
       <div class="row">
         <div class="col-5 col-sm-5 col-md-5 col-lg-5
                     ">
@@ -128,16 +140,6 @@
           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-
-          <!-- right justified photo, adjusts back for mobile -->
-          <figure class="row justify-content-end">
-            <div class="col-12 col-sm-6 order-sm-1 order-2">
-              <figcaption class="text-sm-right">Here is a caption for the right photo.  </figcaption>
-            </div>
-            <div class="col-12 col-sm-6 order-sm-2 order-1">           
-                <img src="assets/placeholder.svg" class="img-fluid d-block">
-            </div>
-          </figure>
             
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,     sed do eiusmod tempor incididunt ut labore et dolore magna     aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -180,11 +182,7 @@
           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-          <!-- video embed -->
-          <div class="embed-responsive embed-responsive-16by9">
-           <iframe src="https://player.vimeo.com/video/334195327" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen> </iframe>
-
-          </div>
+         
 
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -212,7 +210,7 @@
 
 
           <!-- align left photo with text wrap -->
-          <div class="w-50 mr-4 float-left">
+          <div class="w-75 ml-4 float-left pull-left">
             <figure>
               <img src="assets/placeholder.svg" class="img-fluid d-block">
               <figcaption>Here is a caption for the right photo. </figcaption>
@@ -272,52 +270,6 @@
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
-          <!-- Carousel Example (uncomment for captions) -->
-          <h5>Carousel Example</h5>
-          <div id="carousel-1" class="carousel slide" data-ride="carousel" data-interval="false">
-            <ol class="carousel-indicators">
-              <!-- Add additional <li> tags for each indicator -->
-              <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-1" data-slide-to="1"></li>
-              <li data-target="#carousel-1" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="assets/placeholder.svg" class="d-block w-100" alt="Placeholder image">
-                <!--                   
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
-                 -->
-              </div>
-              <div class="carousel-item">
-                <img src="assets/placeholder.svg" class="d-block w-100" alt="Placeholder image">
-                <!-- 
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                -->
-              </div>
-              <div class="carousel-item">
-                <img src="assets/placeholder.svg" class="d-block w-100" alt="Placeholder image">
-                <!-- 
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </div>
-                 -->
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
-          </div>
-
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -328,32 +280,6 @@
         </div><!-- closes .col12 etc -->
       </div><!-- closes .row.justify-content-center -->
     </div><!-- closes .container -->
-
-
-
-    <div class="container mt-5">
-      <div class="row justify-content-center">
-        <div class="col-12 col-sm-10 col-md-8 col-lg-6">
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        </div><!-- closes .col12 etc -->
-      </div><!-- closes .row.justify-content-center -->
-    </div><!-- closes .container -->
-
-
     
 
 
