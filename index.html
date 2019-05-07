@@ -24,260 +24,312 @@
 
     <title>Youth Incarceration Funds</title>
     <style>
+        /* custom styles here */
 
-      /* custom styles here */
-        
-/* custom styles here */
+        /* custom styles here */
         @import url('https://fonts.googleapis.com/css?family=Andada|Karma:600|Markazi+Text|Source+Sans+Pro');
         @import url('https://fonts.googleapis.com/css?family=Andada|Karma:600|Markazi+Text|Roboto|Source+Sans+Pro');
-        
-        header{
-            background: none!important;
-            position: static!important;
+
+        header {
+            background: none !important;
+            position: static !important;
         }
-        
+
         .row {
             padding: 60px;
         }
-        
-        header h1{
-            
+
+        header h1 {
+
             color: white;
             font-size: 2em;
-            opacity: 1;
+            opacity: 0;
             transition: opacity 2s;
-            transition-delay: 2.5s;
             font-family: 'Karma', serif;
             padding: 40px;
         }
 
-        
-        header p.lead{
+
+        header p.lead {
             color: white;
             padding-top: 20px;
             font-size: 1.1em;
-            opacity: 1;
+            opacity: 0;
             transition: opacity 2s;
             transition-delay: 2.5s;
+            
             font-family: 'Karma', serif;
         }
 
-        #top-image{
+        #top-image {
             position: absolute;
             z-index: 0;
             top: 0;
-            left:0;
+            left: 0;
             width: 100vw;
             height: 100vh;
         }
-        
-         
-    </style>
-  </head>
-  <body>
-    
 
-     <!-- Main header -->
+        /*can we make this one appear as we scrool?*/
+        .twoways {
+            text-align: center;
+        }
+
+        .titleaftervid {
+            text-align: center;
+        }
+
+        #main-circle {
+            position: sticky;
+            top: 100px;
+        }
+
+        #start-button {
+            color: darkred;
+            border-color: darkred;
+            margin-top: 60px;
+        }
+
+        #start-button:hover {
+            background-color:;
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Main header -->
     <header class="text-center full-screen dark-shade text-white d-flex align-items-center">
-      <div class="header-container w-100">
-        <h1> On any given night, 47,000 minors in California sleep in detention centers.
-        </h1>
-          
-        <p class="lead"> THEY SHOULDN'T HAVE TO. </p>
-          
-          
-        <!-- The main image that sticks to the top when scrolling -->
-        <img id="main-circle" src="assets/courts.png" class="d-block img-fluid mx-auto">   
-      </div>
-    
-      <!-- TOP BACKGROUND IMAGE WITH ALL BLUE CIRCLES -->
-        
-        <video class="background-video" loop muted autoplay             playsinline preload
-          data-anchor-target="#last-text"
-          data-0="position:fixed;bottom:auto;top:!0px;"
-          data-bottom-bottom="position:absolute;bottom:!0px;top:auto;"
-        >
-          <source src="assets/Flashing%20Police%20Lights%20Effect%20Overlay%20-%20Black%20Background_1_1.mp4" type="video/mp4">
+        <div class="header-container w-100">
+            <h1> On any given night, 47,000 minors in California sleep in detention centers.
+            </h1>
+
+            <p class="lead"> THEY SHOULDN'T HAVE TO. </p>
+
+
+            <!-- The main image that sticks to the top when scrolling -->
+            <button id="start-button" class="btn btn-default">Start</button>
+        </div>
+
+        <!-- TOP BACKGROUND IMAGE WITH ALL BLUE CIRCLES -->
+
+        <video class="background-video" loop muted autoplay playsinline preload>
+            <source src="assets/Flashing%20Police%20Lights%20Effect%20Overlay%20-%20Black%20Background_1_1.mp4" type="video/mp4">
         </video>
-          
+
     </header>
-    
+
 
 
     <!-- start of body text -->
-    <div class="container mt-5">
-        
-        <div class="embed-responsive embed-responsive-16by9" autoplay muted >
-           <iframe src="https://player.vimeo.com/video/334195327" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen> </iframe>
+    <div id="vimeo-video" class="container mt-5">
+
+        <div class="embed-responsive embed-responsive-16by9" autoplay muted>
+            <iframe src="https://player.vimeo.com/video/334195327" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen> </iframe>
 
         </div>
-        
-      <div class="row">
-        <div class="col-5 col-sm-5 col-md-5 col-lg-5
-                    ">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
 
-          <h2>THE COUNTY</h2>
+                    <p class="titleaftervid"> BUT WHAT HAPPENS ONCE A MINOR ENTERS THE SYSTEM? </p>
 
-           <p>The California youth justice system is broken. Numbers may indicate the overall crime trends are lower, but they are hiding more horrifying statistics.</p>
+                    <p class="twoways"> It can go two ways. </p>
 
-          <p>Disparity gaps, or the rate of arrest of white youth versus youth of color, are growing. Not only is the system increasing its racial discrimination, it’s also becoming more costly. Each year, the price of youth incarceration is increasing.  Whether it’s a youth detention center, at home monitoring, or probation - the current system is expensive. Not just in the short term with yearly costs, but by confining youth for any duration dramatically increases their chance of being rearrested later in life. Despite the implication for the taxpayer, the documented effects of confinement- particularly at such a young age, create a strong argument for abolition. Regardless, in California, the system that funds youth incarceration perpetuates the cycle of mass incarceration rather than investing in methods that deter juveniles into the legal system in the first place. 
 
-              In California, juvenile justice funding falls into two major grants: The Juvenile Justice Crime Prevention Act (JJCPA) and the Youth Offender Block Grant (YOBG).  While both grants are state sponsored, they were created for different purposes.  JJCPA for is for youths that are at-risk or justice-involved, meaning minors that were cycled through the youth probation department.  While the YOBG was created to realign youth justice to the county level rather than up to the state’s youth correctional system, the Division of Juvenile Justice (DJJ).  Thereby, YOBG would be able to keep kids within the same community they live in, rather than exported to the state carceral system. However, the text of the bill and the structure that issues the payments hit far from the mark that they were aiming for. </p>
 
-          <p><a data-toggle="collapse" href="#document-1">See document here.</a></p>
-
-          <p class="collapse border" id="document-1">
-            <img src="https://i.postimg.cc/gcBJTxdJ/juvenile-justice-funding-informational-sheet-alameda-county-Page.png" class="img-fluid d-block" alt="document">
-          </p>
-            
-         <p>Instead of investing in programs that prevent juveniles from entering the carceral system entirely, majority of the funds from the YOBG return back to the probation department, most of which is dedicated to county salaries and benefits. This is concerning especially since the YOBG has the ability to fund a variety to fund community based organizations (CBO’s), that provide alternatives to traditional justice systems.  According to the Center on Juvenile and Criminal Justice, in 2016-7 Alameda county spent 83% of their budget on salaries and benefits and less than 1% on community based organizations. The question remains, why are youth incarceration rates lowering, while the cost is rising? And, how to we root out the racial bias that’s imbedded in all of this?
-
-	One solution to this youth incarceration puzzle is to invest into community based organizations. According to Clarence Ford, Policy Analyst at the W. Haywood Burns Institute, a non-profit that researches juvenile justice systems, claims that it’s a systemic problem that keeps these orgs underfunded.   
-</p>
-
+                </div><!-- closes .col12 etc -->
+            </div><!-- closes .row.justify-content-center -->
+        </div><!-- closes .container -->
+    </div>
     
-          <!-- align right photo with text wrap -->
-          <div class="w-75 ml-4 float-left pull-left">
-            <figure>
-              <img src="assets/california_state_juvenile_justice_funding_in_five_bay_area_counties_Page_08.PNG" class="img-fluid d-block">
-              <figcaption>Funding breakdown of 5 Bay Area Counties, courtsey of cjcj.org </figcaption>
-            </figure>
-          </div>
-            
+    <div class="container">
+        <div class="row align-items-stretch">
+            <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+
+
+                <h2>THE COUNTY</h2>
+
+                <p>The California youth justice system is broken. Numbers may indicate the overall crime trends are lower, but they are hiding more horrifying statistics.</p>
+
+                <p>Disparity gaps, or the rate of arrest of white youth versus youth of color, are growing. Not only is the system increasing its racial discrimination, it’s also becoming more costly. Each year, the price of youth incarceration is increasing. Whether it’s a youth detention center, at home monitoring, or probation - the current system is expensive. Not just in the short term with yearly costs, but by confining youth for any duration dramatically increases their chance of being rearrested later in life. Despite the implication for the taxpayer, the documented effects of confinement- particularly at such a young age, create a strong argument for abolition. Regardless, in California, the system that funds youth incarceration perpetuates the cycle of mass incarceration rather than investing in methods that deter juveniles into the legal system in the first place.</p>
+
+                <p>In California, juvenile justice funding falls into two major grants: The Juvenile Justice Crime Prevention Act (JJCPA) and the Youth Offender Block Grant (YOBG). While both grants are state sponsored, they were created for different purposes. JJCPA for is for youths that are at-risk or justice-involved, meaning minors that were cycled through the youth probation department. While the YOBG was created to realign youth justice to the county level rather than up to the state’s youth correctional system, the Division of Juvenile Justice (DJJ). Thereby, YOBG would be able to keep kids within the same community they live in, rather than exported to the state carceral system. However, the text of the bill and the structure that issues the payments hit far from the mark that they were aiming for. </p>
+
+                <p><a data-toggle="collapse" href="#document-1">See document here.</a></p>
+
+                <p class="collapse border" id="document-1">
+                    <img src="https://i.postimg.cc/gcBJTxdJ/juvenile-justice-funding-informational-sheet-alameda-county-Page.png" class="img-fluid d-block" alt="document">
+                </p>
+
+                <p>Instead of investing in programs that prevent juveniles from entering the carceral system entirely, majority of the funds from the YOBG return back to the probation department, most of which is dedicated to county salaries and benefits. This is concerning especially since the YOBG has the ability to fund a variety to fund community based organizations (CBO’s), that provide alternatives to traditional justice systems. According to the Center on Juvenile and Criminal Justice, in 2016-7 Alameda county spent 83% of their budget on salaries and benefits and less than 1% on community based organizations. The question remains, why are youth incarceration rates lowering, while the cost is rising? And, how to we root out the racial bias that’s imbedded in all of this?</p>
+
+                <p>One solution to this youth incarceration puzzle is to invest into community based organizations. According to Clarence Ford, Policy Analyst at the W. Haywood Burns Institute, a non-profit that researches juvenile justice systems, claims that it’s a systemic problem that keeps these orgs underfunded.</p>
+
+
+                <!-- align right photo with text wrap -->
+                <div class="w-75 ml-4 float-left pull-left">
+                    <figure>
+                        <img src="assets/california_state_juvenile_justice_funding_in_five_bay_area_counties_Page_08.PNG" class="img-fluid d-block">
+                        <figcaption>Funding breakdown of 5 Bay Area Counties, courtsey of cjcj.org </figcaption>
+                    </figure>
+                </div>
+
+            </div><!-- closes .row.justify-content-left -->
+
+
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+                <img id="main-circle" src="assets/courts.png" class="d-block img-fluid mx-auto">
+            </div>
+
+
+            <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+
+                <h2>COMMUNITY</h2>
+
+                <p>From the application process to the review board, community based organizations are faced with disadvantages at every stage. Applications to the state grants must be supplemented with detailed and expensive reports that prove the effectiveness of each program. The continual costs of data upkeep prevent organizations from having the necessary requirements to complete the application, let alone be awarded any funds. Even if the application proceeds to the Juvenile Justice Coordinating Council (JJCC), it goes through a council that three quarters folks on the government payroll, such as police officers, judges, health officials, probation officers, with only a quarter of the council from the non-profit space. In order for the CBO’s to have a fair chance at obtaining enough funding to prove their effectiveness, those who are the gatekeepers to financing must lower their barriers to entry and must be willing to invest in the community rather than their own pension. </p>
+
+
+
+                <p>Community based organizations are still a growing field of potential reinvestment. Thorough research is needed to test the true effectiveness of the CBO’s ability to wean the criminal justice space from confinement to restoration. Research shows that youth charged with violent offenses are better off serviced in the community rather than confinement. Alternative conflict resolution strategies, also known as restorative justice, is a process of resolving issues between the victim and perpetrator outside of the criminal justice system.</p>
+
+                <p>In Alameda county, a nonprofit called Community Works West’s Restorative Community Conferencing (RCC) had nearly a 20% reduction in recidivism rates for youth of color in a much more cost effective manner. In a process whereby youth meet with their crime victims through a facilitated dialogue with the aid of family and community members with efforts to mitigate and resolve any harm caused by their offense. RCC diverts over a 100 youth annually from the juvenile legal system. · Moreover, 91% of the victims that surveyed expressed that they would participate again. The cost savings were also significant due to RCC’s lower rates of offending in addition to RCC’s average one time cost of $4,500 vs $23,000 per year on average for a youth on probation.</p>
+
+                <p>Victims’ also support approaches such as RCC. In one of the first ever national surveys, victims expressed how they felt in regards to crime, punishment, and rehabilitation. And contrary to much popular belief 2 to 1 of victims prefer that criminal justice system focus on rehabilitation rather than punishment. And 3 to 1 victims prefer holding people accountable through options beyond prison, such as rehabilitation, mental health treatment, drug treatment, community restoration.</p>
+
+
+                <!-- align left photo with text wrap -->
+                <div class="w-75 ml-4 float-left pull-left">
+                    <figure>
+                        <img src="assets/RCC Graph.png" class="img-fluid d-block">
+                        <figcaption>Recidivism Rates of RCC youth vs control group, courtsey of W. Haywood Burns Institute. </figcaption>
+                    </figure>
+                </div>
+
+
+
+            </div><!-- closes .col12 etc -->
         </div><!-- closes .row.justify-content-left -->
-          
-          
-        <div class="col-2 col-sm-2 col-md-2 col-lg-2">
-        
-        </div>
-          
-            
-        <div class="col-5 col-sm-5 col-md-5 col-lg-5
-                    ">
-            
-          <h2>COMMUNTY</h2>
-            
-          <p>From the application process to the review board, community based organizations are faced with disadvantages at every stage. Applications to the state grants must be supplemented with detailed and expensive reports that prove the effectiveness of each program.  The continual costs of data upkeep prevent organizations from having the necessary requirements to complete the application, let alone be awarded any funds.  Even if the application proceeds to the Juvenile Justice Coordinating Council (JJCC), it goes through a council that three quarters folks on the government payroll, such as police officers, judges, health officials, probation officers, with only a quarter of the council from the non-profit space. In order for the CBO’s to have a fair chance at obtaining enough funding to prove their effectiveness, those who are the gatekeepers to financing must lower their barriers to entry and must be willing to invest in the community rather than their own pension. </p>
-
-         
-
-          <p>Community based organizations are still a growing field of potential reinvestment.  Thorough research is needed to test the true effectiveness of the CBO’s ability to wean the criminal justice space from confinement to restoration. Research shows that youth charged with violent offenses are better off serviced in the community rather than confinement.  Alternative conflict resolution strategies, also known as restorative justice, is a process of resolving issues between the victim and perpetrator outside of the criminal justice system.</p>
-            
-          <p>In Alameda county, a nonprofit called Community Works West’s Restorative Community Conferencing (RCC) had nearly a 20%  reduction in recidivism rates for youth of color in a much more cost effective manner. In a process whereby youth meet with their crime victims through a facilitated dialogue with the aid of family and community members with efforts to mitigate and resolve any harm caused by their offense.  RCC diverts over a 100 youth annually from the juvenile legal system. ·       Moreover, 91% of the victims that surveyed expressed that they would participate again. The cost savings were also significant due to RCC’s lower rates of offending in addition to RCC’s average one time cost of $4,500 vs $23,000 per year on average for a youth on probation.</p>
-
-          <p>Victims’ also support approaches such as RCC. In one of the first ever national surveys, victims expressed how they felt in regards to crime, punishment, and rehabilitation.  And contrary to much popular belief 2 to 1 of victims prefer that criminal justice system focus on rehabilitation rather than punishment. And 3 to 1 victims prefer holding people accountable through options beyond prison, such as rehabilitation, mental health treatment, drug treatment, community restoration.</p>
-
-
-          <!-- align left photo with text wrap -->
-          <div class="w-75 ml-4 float-left pull-left">
-            <figure>
-              <img src="assets/RCC Graph.png" class="img-fluid d-block">
-              <figcaption>Recidivism Rates of RCC youth vs control group, courtsey of W. Haywood Burns Institute. </figcaption>
-            </figure>
-          </div>
-
-
-
-        </div><!-- closes .col12 etc -->
-      </div><!-- closes .row.justify-content-left -->
     </div><!-- closes .container -->
-      
+
 
     <!-- Map example -->
     <div class="container mt-5">
-      <div class="row justify-content-center">
-        <div class="col-12 col-sm-10">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10">
 
-          <!-- Example of map embed -->
-<!--
+                <!-- Example of map embed -->
+                <!--
           <div class="embed-responsive embed-responsive-4by3">
             <iframe class="embed-responsive-item" src="https://public.carto.com/viz/397fd294-a82b-4470-90cc-6153ebad5bf6/embed_map" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
           </div>
 -->
 
 
-        </div><!-- closes .col12 etc -->
-      </div><!-- closes .row.justify-content-center -->
+            </div><!-- closes .col12 etc -->
+        </div><!-- closes .row.justify-content-center -->
     </div><!-- closes .container -->
 
 
 
 
     <!-- fullscreen photo -->
-    <figure>
-      <img src="assets/RCC Recidivism Numbers.png" class="img-fluid d-block">
-      <figcaption>Full breakdown of RCC's recidivism rates, courtsey of RCC</figcaption>
-    </figure>
+  <div class="embed-responsive embed-responsive-16by9" autoplay muted>
+            <iframe src="https://player.vimeo.com/video/334195327" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen> </iframe>
+
+        </div>
 
 
     <div class="container mt-5">
-      <div class="row justify-content-center">
-        <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6">
 
-          <p>When we imagine the future of America, how to protect not only the victims of crimes but also the people who commit those crimes.  Research shows that the cost of incarceration is extremely costly and not only to the taxpayer. Mental and developmental health are jeopardized for all the youth that are sentenced to any term of incarceration.  To insure the stability and vitality of our younger generations, we must change the direction and methods of our youth incarceration system.  YOBG and JJCPA are only two grants but they illustrate a larger problem.  Investment in alternatives is incredibly challenging since the powers that be control the source of funding.  
-However the future is bright. In California, the state is investing in more grants that will give non-profits more opportunity to get access to funds without competing with the county level probation departments. The new Governor, Gavin Newsom, plans to shift youth incarceration from the Probation Department to the Health and Human Services- a plan that will hopely shake up the culture of youth incarceration.  While these policy level changes are nice, it’s important to demand that title changes come with fiscal changes as well. 
-</p>
+                <p>When we imagine the future of America, how to protect not only the victims of crimes but also the people who commit those crimes. Research shows that the cost of incarceration is extremely costly and not only to the taxpayer. Mental and developmental health are jeopardized for all the youth that are sentenced to any term of incarceration. To insure the stability and vitality of our younger generations, we must change the direction and methods of our youth incarceration system. YOBG and JJCPA are only two grants but they illustrate a larger problem. Investment in alternatives is incredibly challenging since the powers that be control the source of funding.
+                    However the future is bright. In California, the state is investing in more grants that will give non-profits more opportunity to get access to funds without competing with the county level probation departments. The new Governor, Gavin Newsom, plans to shift youth incarceration from the Probation Department to the Health and Human Services- a plan that will hopely shake up the culture of youth incarceration. While these policy level changes are nice, it’s important to demand that title changes come with fiscal changes as well.
+                </p>
 
-        </div><!-- closes .col12 etc -->
-      </div><!-- closes .row.justify-content-center -->
+            </div><!-- closes .col12 etc -->
+        </div><!-- closes .row.justify-content-center -->
     </div><!-- closes .container -->
-    
+
 
 
     <!-- Light box that pops up. Leave empty. JavaScript at the bottom of page will populate it. -->
     <div class="modal fade" id="lightbox">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal" style="margin: 0 5px 0 auto;">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="modal-body">
-          </div>
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" style="margin: 0 5px 0 auto;">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
 
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="js/skrollr.min.js"></script>
     <script>
-      //initiate skrollr
-      var s = skrollr.init();
-        
-      var mainCircleTop = $("#main-circle").offset().top;
-        
-        
-      window.setTimeout(function(){
-          
-          $("header h1,header p").css("opacity", 1);
-          
-      }, 1000);
+        //initiate skrollr
+        var s = skrollr.init();
 
-      //jquery
-      jQuery(document).ready(function($){
-          
-          
-        $(window).on("scroll", function(){
-            if($(window).scrollTop() > mainCircleTop - 250){
-                $("#main-circle").css({position:"fixed", top:"250px",left:"50%",transform:"translateX(-50%)"});
-            } else {
-                $("#main-circle").css({position:"static", transform:"none"})
-            }
-        })
-        
+        var mainCircleTop = $("#main-circle").offset().top;
 
 
-        //modal code for lightbox
-        $('#lightbox').on('show.bs.modal', function (event) {
-          var button = $(event.relatedTarget); // Button that triggered the modal
-          var recipient = button.find("img").attr('src');  // Extract info from src.
-          var modal = $(this);
-          modal.find('.modal-body').html('<img src="' + recipient + '" class="img-fluid d-block">');
+ 
+
+        //jquery
+        jQuery(document).ready(function($) {
+
+            $("header h1,header p").css("opacity", 1);
+            
+            
+            $(window).on("scroll", function() {
+//                if ($(window).scrollTop() > mainCircleTop - 250) {
+//                    $("#main-circle").css({
+//                        position: "fixed",
+//                        top: "250px",
+//                        left: "50%",
+//                        transform: "translateX(-50%)"
+//                    });
+//                } else {
+//                    $("#main-circle").css({
+//                        position: "static",
+//                        transform: "none"
+//                    })
+//                }
+            });
+
+
+            $("#start-button").on("click", function() {
+
+
+                $("html,body").stop().animate({
+                    scrollTop: $("#vimeo-video").offset().top
+                }, {
+                    duration: 800,
+                    queue: false
+                });
+                new Vimeo.Player($("#vimeo-video iframe")).play();
+
+            });
+
+
+
+            //modal code for lightbox
+            $('#lightbox').on('show.bs.modal', function(event) {
+                var button = $(event.relatedTarget); // Button that triggered the modal
+                var recipient = button.find("img").attr('src'); // Extract info from src.
+                var modal = $(this);
+                modal.find('.modal-body').html('<img src="' + recipient + '" class="img-fluid d-block">');
+            });
+
+
         });
-
-
-      });
     </script>
-  </body>
-</html>
+</body></html>
